@@ -6,6 +6,7 @@ Student：左庭瑀\
 ID：B0744144\
 Department：長庚資管二\
 Intro：早安。
+Course inf:[點此進入Peculab.org](http://peculab.org/)
 
 ## Schedule
 ### [Week1-1 07/08]
