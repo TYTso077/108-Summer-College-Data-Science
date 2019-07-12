@@ -4,7 +4,7 @@
 Course：108 Summer College Data Science programming    
 Student：左庭瑀  
 ID：B0744144   
-Department：CGUIM
+Department：CGUIM  
 Intro：Have a nice day!   
 Course inf：[Peculab.org](http://peculab.org/)
 
