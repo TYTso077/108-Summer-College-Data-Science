@@ -2,10 +2,10 @@
 
 Announcement
 Course：107學年度夏季學院【資料科學程式設計】
-Student：
-ID：
-Department：
-Intro：
+Student：左庭瑀
+ID：B0744144
+Department：長庚資管二
+Intro：早安，祝你有個美好的一天。
 
 Schedule
 [Week1-1 07/08]
