@@ -1,11 +1,11 @@
 # 108-Summer-College-Data-Science
 
 Announcement
-Course：107學年度夏季學院【資料科學程式設計】\n
-Student：左庭瑀\n
-ID：B0744144\n
-Department：長庚資管二\n
-Intro：早安，祝你有個美好的一天。\n
+Course：107學年度夏季學院【資料科學程式設計】\
+Student：左庭瑀\
+ID：B0744144\
+Department：長庚資管二\
+Intro：早安，祝你有個美好的一天。\
 
 Schedule\n
 [Week1-1 07/08]\n
