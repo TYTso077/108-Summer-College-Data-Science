@@ -1,11 +1,11 @@
 # 108-Summer-College-Data-Science
 
 ## Announcement
-Course：108學年度夏季學院-資料科學程式設計    
-Student：左庭瑀\
-ID：B0744144\
-Department：長庚資管二\
-Intro：早安。   
+Course：108 Summer College Data Science programming    
+Student：左庭瑀  
+ID：B0744144   
+Department：CGUIM
+Intro：Have a nice day!   
 Course inf：[Peculab.org](http://peculab.org/)
 
 ## Schedule
