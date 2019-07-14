@@ -7,13 +7,16 @@ ID：B0744144
 Department：CGUIM  
 Intro：Have a nice day!   
 Course inf：[Peculab.org](http://peculab.org/)
+Others github：[Gitgub](http://peculab.org/2019/07/03/108-全國夏季學院學員-github/)              
 
 ## Schedule
 ### Week1-1 07/08
+Course link：[Week 1-1](http://peculab.org/2019/07/03/108-全國夏季學院課程內容/)          
 In Class: - R markdown   
 At Home:
 
 ### Week1-2 07/11
+Course link：[Week 1-1](http://peculab.org/2019/07/03/108-全國夏季學院課程內容/)      
 In Class:  
 At Home:
 
