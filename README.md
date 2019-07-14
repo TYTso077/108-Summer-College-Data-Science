@@ -6,7 +6,7 @@ Student：左庭瑀
 ID：B0744144   
 Department：CGUIM  
 Intro：Have a nice day!   
-Course inf：[Peculab.org](http://peculab.org/)
+Course inf：[Peculab.org](http://peculab.org/)             
 Others github：[Gitgub](http://peculab.org/2019/07/03/108-全國夏季學院學員-github/)              
 
 ## Schedule
