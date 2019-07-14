@@ -12,7 +12,7 @@ Others github：[Github](http://peculab.org/2019/07/03/108-全國夏季學院學
 ### Week 1          
 > #### 07/08       
 > Course link：[Week 1-1](http://peculab.org/2019/07/03/108-全國夏季學院課程內容/)          
-> In Class: R markdown   
+> In Class:  [R Markdown](HW_R Markdown_0.Rmd)  
 > At Home:
 
 > #### 07/11       
