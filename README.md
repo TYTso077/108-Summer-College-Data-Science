@@ -26,9 +26,7 @@ Others github：[Github](http://peculab.org/2019/07/03/108-全國夏季學院學
 ### Week 2   
  #### 07/15
  Course link：[Week 2-1](http://peculab.org/2019/07/11/108-全國夏季學院-7-15-class-3/)          
- In Class: 
-> * 資料視覺化與EDA           
- At Home:        
+      
  HW：[HW3](https://tytso077.github.io/108-Summer-College-Data-Science/Week%202-1_0715/HW3.html)                        
 
  #### 07/18
