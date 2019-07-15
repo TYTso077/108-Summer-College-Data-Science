@@ -1,0 +1,21 @@
+---
+title: "hw2"
+author: "TYTso"
+date: "2019/7/15"
+output: html_document
+---
+
+```{r}
+path = "D:/TSO/API_TX.VAL.TECH.MF.ZS_DS2_en_csv_v2_46181/tech.xlsx"
+path2 = "D:/TSO/ele.xlsx"
+
+library(tidyverse)
+library(dplyr) 
+library(readxl)
+techd = read_excel(path)
+eled = read_excel(path2)
+techs <- select(techd,"Country Name","2000")
+eles <- select(eled,"Country Name","2000")
+data_merge<-merge(techs, eles, by="Country Name")
+data_merge
+```
