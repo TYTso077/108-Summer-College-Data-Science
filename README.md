@@ -10,10 +10,8 @@ Others github：[Github](http://peculab.org/2019/07/03/108-全國夏季學院學
 
 ## Schedule      
 ### Week 1          
-> #### 07/08       
-> Course link：[Week 1-1](http://peculab.org/2019/07/03/108-全國夏季學院課程內容/)          
-> In Class:  [R Markdown](HW_R Markdown_0.Rmd)  
-> At Home:
+> [#### 07/08](https://github.com/TYTso077/108-Summer-College-Data-Science/tree/master/Week%201-1_0708)       
+
 
 > #### 07/11       
 > Course link：[Week 1-2](http://peculab.org/2019/07/10/108-全國夏季學院-7-11-class-2/)      
