@@ -40,13 +40,14 @@ Others github：[Github](http://peculab.org/2019/07/03/108-全國夏季學院學
    * Course link：[Week 2-2](http://peculab.org/2019/07/15/108-%e5%85%a8%e5%9c%8b%e5%a4%8f%e5%ad%a3%e5%ad%b8%e9%99%a2-7-18-class-4/)    
    * In Class:      
      > Wordcloud              
+       Text mining                  
        RSelenium            
        R apply family           
        TF-INF       
        PCA          
-       KMeans
-       SVM      
-       Apriori          
+       KMeans           
+       SVM          
+       Apriori            
               
    * HW：[HW3]()                 
  
