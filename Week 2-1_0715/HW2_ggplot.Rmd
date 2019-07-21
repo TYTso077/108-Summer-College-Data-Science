@@ -1,0 +1,88 @@
+---
+title: "HW2_ggplot"
+author: "TYTso"
+date: "2019/7/16"
+output: html_document
+---
+# Objective    
+## To figure out the relationship between lung, bronchial and tracheal-related cancer incidence rate and Observation of particulate matter (PM) in the air in 2015 and gender differences
+
+data source (cancer): https://data.gov.tw/dataset/6399   
+data source (PM): https://data.gov.tw/dataset/100047 
+
+### the relationship between lung, bronchial and tracheal-related cancer incidence rate and Observation of particulate matter (PM) in the air in 2015
+
+## Data Processing
+```{r}
+path = "D:/TSO/cancer.xlsx"
+path2 = "D:/TSO/pm25.xlsx"
+
+library(tidyverse)
+library(readxl)
+nccancer = read_excel(path)
+ncpm = read_excel(path2)
+
+cancer=select(nccancer,"癌症診斷年","性別","縣市別","癌症別","癌症發生數","平均年齡")
+
+cancerlung=filter(cancer,癌症診斷年%in% c("2005":"2015"),癌症別 =="肺、支氣管及氣管",縣市別=="台北市",性別=="不分男女")
+pm=select(ncpm,"月份","監測站","日平均值超過125μg/m3之日數(%)")
+pm104<- pm[grep("104年", pm$"月份"),]
+
+pmto1=0
+pmto2<-0
+pmto3=0
+pmto4<-0
+pmto5=0
+pmto6<-0
+pmto7=0
+pmto8<-0
+pmto9=0
+pmto10<-0
+pmto11=0
+pmto12<-0
+
+for (i in 1:8){
+  pmto1<-pm104[i,"日平均值超過125μg/m3之日數(%)"]+pmto1
+}
+for (i in 10:17){
+  pmto2<-pm104[i,"日平均值超過125μg/m3之日數(%)"]+pmto2
+}
+for (i in 18:25){
+  pmto3<-pm104[i,"日平均值超過125μg/m3之日數(%)"]+pmto3
+}
+for (i in 26:33){
+  pmto4<-pm104[i,"日平均值超過125μg/m3之日數(%)"]+pmto4
+}
+for (i in 34:41){
+  pmto5<-pm104[i,"日平均值超過125μg/m3之日數(%)"]+pmto5
+}
+for (i in 42:49){
+  pmto6<-pm104[i,"日平均值超過125μg/m3之日數(%)"]+pmto6
+}
+for (i in 50:57){
+  pmto7<-pm104[i,"日平均值超過125μg/m3之日數(%)"]+pmto7
+}
+for (i in 58:65){
+  pmto8<-pm104[i,"日平均值超過125μg/m3之日數(%)"]+pmto8
+}
+for (i in 66:73){
+  pmto9<-pm104[i,"日平均值超過125μg/m3之日數(%)"]+pmto9
+}
+for (i in 74:81){
+  pmto10<-pm104[i,"日平均值超過125μg/m3之日數(%)"]+pmto10
+}
+for (i in 82:89){
+  pmto11<-pm104[i,"日平均值超過125μg/m3之日數(%)"]+pmto11
+}
+for (i in 89:96){
+  pmto12<-pm104[i,"日平均值超過125μg/m3之日數(%)"]+pmto12
+}
+ptof <- data.frame("年份"=c(2005:2015),"月平均值超過125μg/m3之日數(%)"=c(pmto1[1,1],pmto2[1,1],pmto3[1,1],pmto4[1,1],pmto5[1,1],pmto6[1,1],pmto7[1,1],pmto8[1,1],pmto8[1,1],pmto9[1,1],pmto10[1,1]))
+
+
+```
+
+## lung cancer is increase yearly
+```{r}
+ggplot(cancerlung, aes(x=癌症診斷年, y=癌症發生數)) + geom_line(color="red") + geom_point() +ylim(1000, max(cancerlung$癌症發生數)) 
+```
