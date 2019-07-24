@@ -50,17 +50,16 @@ Group members：[張芮嘉](https://github.com/Rachel0718/data_science)、[吳�
        SVM          
        Apriori            
               
-   * HW：[HW3]()                 
+   * HW：[HW3_Text Mining](https://tytsooo.github.io/108-Summer-College-Data-Science/Week%202-2_0718/HW30.html)                 
  
 ### Week 3    
 * #### 07/22
    * Course link：[Week 3-1](https://reurl.cc/k6rz9)             
    * In Class:  
      > Machine Learning          
-   
-   * HW：       
+         
 
-* #### 07/26
+* #### 07/26 Final Report                   
    * Course link：[Week 3-2]()                
    * In Class:   
    
