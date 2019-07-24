@@ -55,12 +55,10 @@ Group members：[張芮嘉](https://github.com/Rachel0718/data_science)、[吳�
 ### Week 3    
 * #### 07/22
    * Course link：[Week 3-1](https://reurl.cc/k6rz9)             
-   * In Class:  
+   * In Class:          
+   
      > Machine Learning          
          
 
 * #### 07/26 Final Report                   
-   * Course link：[Week 3-2]()                
-   * In Class:   
-   
-   * HW：        
+   * Course link：[Week 3-2]()                 
