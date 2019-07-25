@@ -60,5 +60,8 @@ Group members：[張芮嘉](https://github.com/Rachel0718/data_science)、[吳�
      > Machine Learning          
          
 
-* #### 07/26 Final Project Report       
-   * Course link：[Week 3-2](http://peculab.org/2019/07/25/108-%e5%85%a8%e5%9c%8b%e5%a4%8f%e5%ad%a3%e5%ad%b8%e9%99%a2-7-25-class-6/)        * [Final Project]()                                   
+* #### 07/26 Final Project Report               
+   * Course link：[Week 3-2](https://reurl.cc/na59d)                     
+   * [Final Project_阿翔事件](https://tytsooo.github.io/108-Summer-College-Data-Science/Final%20Project/ashan-ptt.html)               
+   * [Final Project_復仇者聯盟](https://tytsooo.github.io/108-Summer-College-Data-Science/Final%20Project/avenger4.html)              
+   * [Final Project_NBA Kawhi](https://tytsooo.github.io/108-Summer-College-Data-Science/Final%20Project/kawhi.html)            
