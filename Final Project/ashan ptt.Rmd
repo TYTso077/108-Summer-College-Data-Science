@@ -1,0 +1,43 @@
+---
+title: "A Shan ptt womantalk"
+author: "TYTso"
+date: "2019/7/24"
+output: html_document
+---
+**套件**
+```{r}
+library(rvest)
+library(tidyverse)
+```
+## 阿翔事件事發於2019-06-12
+資料來源:https://www.mirrormedia.mg/story/20190611ent007/
+## PTT-Womantalk版上對於阿翔事件的討論(僅於6月)
+```{r}
+pttwomana<-data.frame()
+for(id in 1:2)
+{
+  prefix <- "https://www.ptt.cc/bbs/WomenTalk/search?page="
+  url  <- paste0( prefix, as.character(id), "&q=阿翔" )
+  
+  womana <- read_html(url)
+  post_title <- womana%>% 
+    html_nodes(".title a") %>%
+    html_text()
+  post_date <- womana %>% 
+    html_nodes(".date") %>%
+    html_text()  
+  
+  pttwomana <- rbind(pttwomana, data.frame(title= post_title,
+                                                   date= post_date))
+  pttwoman<-pttwomana[-30:-33,]
+}
+```
+## 統計次數並作圖
+```{r}
+ashan<-count(pttwoman,date=as.character(date))
+names(ashan)<-c("date","posts")
+ashan
+ggplot(ashan,aes(x=date,y=posts))+
+geom_bar(stat = "identity")+ggtitle("阿翔事件2019年6月討論文章數")
+```
+##結論:阿翔事件事發的當天(6/12)在ptt-womantalk版上馬上有立即的討論串，在6/12~6/14之間都有持續的熱度，而6/16日阿翔宣布將於6/18召開記者會，隔天討論次數上漲到這個週期的最高峰，記者會隔天熱度便下滑，之夠就沒有相關討論了，ptt-womantalk版的使用者對阿翔事件的討論度並沒有持續很長一段時間，僅維持一周左右的時間。可能womantalk版上的使用者對時事的關注度無法維持很長一段時間。

@@ -1,0 +1,118 @@
+---
+title: "Kawhi leonard nba"
+author: "TYTso"
+date: "2019/7/24"
+output: html_document
+---
+**套件**
+```{r}
+library(rvest)
+library(tidyverse)
+```
+
+
+# PTT-Nba版在自由市場開市時(美國時間7/1)針對球星Kawhi Leonard動向之討論串
+
+## 分別在NBA以及Lakers版上搜尋Kawhi、Leonard、可愛等關鍵字，觀察結果NBA版可愛、Kawhi出現之頻率較平均，而Lakers版較常以leonard稱之:
+
+### NBA版搜尋kawhi(6月中至現在之資料)
+```{r}
+pttnbakawhil<-data.frame()
+for(id in 1:4)
+{
+  nbakawhi <- "https://www.ptt.cc/bbs/NBA/search?page="
+  url  <- paste0( nbakawhi, as.character(id), "&q=kawhi" )
+  
+  nbakawhil <- read_html(url)
+  post_title <- nbakawhil%>% 
+    html_nodes(".title a") %>%
+    html_text()
+  post_date <- nbakawhil%>% 
+    html_nodes(".date") %>%
+    html_text()  
+  
+  pttnbakawhil <- rbind(pttnbakawhil, data.frame(title= post_title,
+                                           date= post_date))
+  head(pttnbakawhil)
+}
+```
+### NBA版搜尋可愛(6月中至現在之資料)
+```{r}
+pttnbakaw<-data.frame()
+for(id in 1:8)
+{
+  nbakawhi <- "https://www.ptt.cc/bbs/NBA/search?page="
+  url  <- paste0( nbakawhi, as.character(id), "&q=可愛" )
+  
+  nabkaw <- read_html(url)
+  post_title <- nabkaw%>% 
+    html_nodes(".title a") %>%
+    html_text()
+  post_date <- nabkaw%>% 
+    html_nodes(".date") %>%
+    html_text()  
+  
+  pttnbakaw <- rbind(pttnbakaw, data.frame(title= post_title,
+                                           date= post_date))
+  head(pttnbakaw)
+}
+```
+### Lakers版搜尋leonard(6月中至現在之資料)
+```{r}
+pttnbalaker<-data.frame()
+
+for(id in 2:1)
+{
+  nbalaker <- "https://www.ptt.cc/bbs/Lakers/search?page="
+  url  <- paste0( nbalaker, as.character(id), "&q=leonard" )
+  
+  nablak <- read_html(url)
+  post_title <- nablak%>% 
+    html_nodes(".title a") %>%
+    html_text()
+  post_date <- nablak%>% 
+    html_nodes(".date") %>%
+    html_text()  
+  
+  pttnbalaker <- rbind(pttnbalaker, data.frame(title= post_title,
+                                           date= post_date))
+  head(pttnbalaker)
+}
+```
+
+```{r}
+library(dplyr)
+library(lubridate)
+datac1 <- pttnbakawhil %>% 
+  mutate(date=as.character(date)) %>%
+  mutate(month= month(as.POSIXlt(date, format="%m/%d")))
+data1<-count(datac1,month)
+
+datac2 <- pttnbakaw %>% 
+  mutate(date=as.character(date)) %>%
+  mutate(month= month(as.POSIXlt(date, format="%m/%d")))
+data2<-count(datac2,month)
+
+datac3 <- pttnbalaker %>% 
+  mutate(date=as.character(date)) %>%
+  mutate(month= month(as.POSIXlt(date, format="%m/%d")))
+data3<-count(datac3,month)
+
+d<-merge(data1,data2, by = "month", all = T)
+d[is.na(d)] <- 0
+d<-merge(d,data3, by = "month", all = T)
+
+posts<-c(d[1,2]+d[1,3]+d[1,4],d[2,2]+d[2,3]+d[2,4],d[3,2]+d[3,3]+d[3,4])
+
+month<-c(5,6,7)
+totalnba<-data.frame(month,posts)
+totalnba
+
+```
+
+### 繪圖
+```{r}
+ggplot(totalnba,aes(x=month,y=posts))+
+  geom_bar(stat = "identity")+ggtitle("Kawhi Leonard自由市場動向討論數")
+
+```
