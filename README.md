@@ -4,7 +4,7 @@
 Course：108 Summer College Data Science programming    
 Student：左庭瑀  
 ID：B0744144   
-Department：CGUIM  
+Department：CGU CSIE  
 Course inf：[Peculab.org](http://peculab.org/)             
 Others github：[Github](http://peculab.org/2019/07/03/108-全國夏季學院學員-github/)          
 Group members：[張芮嘉](https://github.com/Rachel0718/data_science)、[吳宜叡](https://github.com/yo-shi-mi/hw)                   
